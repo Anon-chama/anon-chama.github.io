@@ -1,0 +1,46 @@
+body{
+    background-color: azure;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10pt;
+}
+
+header{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: grid;
+}
+#postlist{
+    margin-left: 20px;
+}
+.post-wraper{
+    background-color: gainsboro;
+    padding: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.name{
+    font-weight: bold;
+    color: yellowgreen
+}
+
+.content{
+    padding: 8px;
+    display: flex;
+}
+.image-link{
+    margin-right: 10px;
+}
+#title-img{
+    display: block;
+    padding-bottom: 10px;
+    max-width: 600px;
+}
+
+a > img:only-child {
+    display: block;
+  }
+
+
