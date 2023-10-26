@@ -26,9 +26,10 @@ $("#boton-buscar").click(function(){
                     <span class="timestamp">${post["date"]}</span>
                     <span class="post-number">No.${post["id"]}</span>
                     <a class="goto-button" target="_blank" href="https://archive.palanq.win/vt/thread/${post["father"]}/#${post["id"]}">View on archive</a>
-                    
+                    <span>(You) count: ${post["youCount"]}</span>
                     <div class="content">
-                    <img class="image-link" src="https://archive-media.palanq.win/vt/thumb${post["image"]}" onerror="this.style.display='none'">
+                    ${post["image"] != undefined?`<img class="image-link" src="https://archive-media.palanq.win/vt/thumb${post["image"]}" onerror="this.style.display='none'">`:""}
+                    
                     <div class="text">
                         ${post["content"].replaceAll("\n", "<br>")}
                     </div>
