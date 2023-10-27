@@ -44,7 +44,10 @@ header{
     font-weight: bold;
     color: yellowgreen
 }
-
+.yous{
+    border-style: outset;
+    padding: 0 10px;
+}
 .content{
     padding: 8px;
     display: flex;
